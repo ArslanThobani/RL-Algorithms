@@ -39,27 +39,26 @@ def run_experiment(m1, m2, m3, eps, N):
     plt.show()
 
     for b in bandits:
-      print(b.mean)
+        print(b.mean)
 
     return cumulative_average
 
 if __name__ == '__main__':
-  c_1 = run_experiment(1.0, 2.0, 3.0, 0.1, 100000)
-  c_05 = run_experiment(1.0, 2.0, 3.0, 0.05, 100000)
-  c_01 = run_experiment(1.0, 2.0, 3.0, 0.01, 100000)
+    c_1 = run_experiment(1.0, 2.0, 3.0, 0.1, 100000)
+    c_05 = run_experiment(1.0, 2.0, 3.0, 0.05, 100000)
+    c_01 = run_experiment(1.0, 2.0, 3.0, 0.01, 100000)
 
-  # log scale plot
-  plt.plot(c_1, label='eps = 0.1')
-  plt.plot(c_05, label='eps = 0.05')
-  plt.plot(c_01, label='eps = 0.01')
-  plt.legend()
-  plt.xscale('log')
-  plt.show()
+    # log scale plot
+    plt.plot(c_1, label='eps = 0.1')
+    plt.plot(c_05, label='eps = 0.05')
+    plt.plot(c_01, label='eps = 0.01')
+    plt.legend()
+    plt.xscale('log')
+    plt.show()
 
-
-  # linear plot
-  plt.plot(c_1, label='eps = 0.1')
-  plt.plot(c_05, label='eps = 0.05')
-  plt.plot(c_01, label='eps = 0.01')
-  plt.legend()
-  plt.show()
+    # linear plot
+    plt.plot(c_1, label='eps = 0.1')
+    plt.plot(c_05, label='eps = 0.05')
+    plt.plot(c_01, label='eps = 0.01')
+    plt.legend()
+    plt.show()
