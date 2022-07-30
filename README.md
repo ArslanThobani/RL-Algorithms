@@ -1,6 +1,6 @@
 # RL-Algorithms
-<h3>Basic Reinforcement Learning algorithms implemented in python</h3>
+<h3>Solving Grid world problems using different Reinforcement Learning algorithms</h3>
 
-Implementation of algorithms from Sutton and Barto's Reinforcement Learning: An Introduction 2nd Edition
-<p>All the algorithms use simple gridworld environment unless specified by the comment at the start of the code.
+All the algorithms are referred from Sutton and Barto's Reinforcement Learning: An Introduction 2nd Edition
+<p>All the algorithms are implemented in python using just numpy
 
